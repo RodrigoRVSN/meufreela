@@ -1,0 +1,41 @@
+.contact__container{
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: space-evenly;
+  max-width: 1030px;
+  margin: 10rem auto;
+  padding: 1rem;
+  
+  h2 {
+    font-weight: 700;
+    font-size: 3.125rem;
+  }
+
+  p {
+    font-weight: 400;
+    font-size: 1.375rem;
+  }
+
+  img{
+    height: 29.75rem;
+    width: 25rem;
+  }
+
+  @media(max-width: 800px){
+    align-items: center;
+    text-align: center;
+    h2{
+      font-size: 2.125rem;
+    }
+    p{
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.about__bar{
+  width: 100%;
+  position: absolute;
+  margin-top: -5rem;
+}

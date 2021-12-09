@@ -5,6 +5,7 @@ export default class MyDocument extends Document {
     return (
       <Html lang="en">
         <Head>
+          <link rel="manifest" href="/manifest.json" />
           <link rel="preconnect" href="https://fonts.gstatic.com" />
           {/* Change favicon. /favicon.png in public default */}
           <link rel="shortcut icon" href="/favicon.png" type="image/png" />

@@ -1,0 +1,40 @@
+.introduction__container{
+  height: 95vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 3.7rem;
+
+  background: linear-gradient(rgb(0,0,0,0.8), rgb(0,0,0,0.8)), url('../../../assets/person_coding.webp'); 
+  background-repeat: no-repeat;
+  background-position:center;
+  background-attachment: fixed;
+  background-size: 100%;
+  
+  h3 {
+    font-size: 1.875rem;
+    font-weight: 400;
+    color: var(--secondary-light);
+  }
+
+  h1 {
+    max-width: 47.25rem;
+    font-size: 5rem;
+    font-weight: 700;
+    margin-bottom: 2.574rem;
+    color: var(--secondary-light);
+  }
+
+  @media(max-width: 1200px){
+    padding: 1rem;
+    background-size: cover;
+    background-position: top;
+
+    h3 {
+      font-size: 1.475rem;
+    }
+    h1 {
+      font-size: 3rem;
+    }
+  }
+}

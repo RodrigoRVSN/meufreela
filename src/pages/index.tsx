@@ -1,41 +1,23 @@
-import { GetServerSideProps } from 'next';
+import Footer from '@App/components/layout/Footer';
+import Header from '@App/components/layout/Header';
+import About from '@App/components/widgets/About';
+import Contact from '@App/components/widgets/Contact';
+import Introduction from '@App/components/widgets/Introduction';
 import Head from 'next/head';
 
-import api from '../services/api';
-
-interface IRequest {
-  name: string;
-}
-
-interface IHomeProps {
-  data: IRequest;
-}
-
-export default function Home({ data }: IHomeProps): JSX.Element {
+export default function Home(): JSX.Element {
   return (
     <>
       <Head>
-        <title>Home</title>
+        <title>MeuFreela</title>
       </Head>
-      <h1>
-        Hello! Template made by
-        <a
-          target="_blank"
-          href="https://github.com/RodrigoRVSN"
-          rel="noreferrer"
-        >
-          {' '}
-          {data && data.name}
-        </a>
-      </h1>
+      <Header />
+      <main>
+        <Introduction />
+        <About />
+        <Contact />
+      </main>
+      <Footer />
     </>
   );
 }
-
-export const getServerSideProps: GetServerSideProps = async () => {
-  const response = await api.get('/hello');
-
-  return {
-    props: { data: response.data },
-  };
-};

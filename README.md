@@ -1,39 +1,71 @@
-# 👕 Next.JS Template with Linter
+# meufreela
 
+<!--- https://shields.io --->
 
-<br>
+![GitHub repo size](https://img.shields.io/github/repo-size/rodrigorvsn/meufreela?style=for-the-badge)
+![GitHub language count](https://img.shields.io/github/languages/count/rodrigorvsn/meufreela?style=for-the-badge)
+![GitHub forks](https://img.shields.io/github/forks/rodrigorvsn/meufreela?style=for-the-badge)
+![Bitbucket open issues](https://img.shields.io/bitbucket/issues/rodrigorvsn/meufreela?style=for-the-badge)
+![Bitbucket open pull requests](https://img.shields.io/bitbucket/pr-raw/rodrigorvsn/meufreela?style=for-the-badge)
 
 ___
-## 🔨 Tools:
+<!--- #################### mudar badges #################### --->
 
-- NextJS
+
+
+
+
+<!--- #################### mudar imagem exemplo #################### --->
+___
+> Simple landing page made in a challenge.
+___
+## 💻 Prerequisites
+
+- Install LTS Node version.
+<!--- #################### mudar pré-requisitos  ####################--->
+___
+## 🛠 Tools used
+
 - Typescript
-- Axios (Fetching)
-- ESLint (Code Pattern)
-- Prettier (Formatter)
-- Husky (Pre-commit)
-- Jest (Unit/Integration Test)
-- Cypress (Test E2E)
+- <b>Nextjs</b>
+- Next PWA
+
+<!--- #################### mudar ferramentas #################### --->
 ___
-## 🤺 How to use:
+## 🚀 Installing meufreela
 
-- `git clone https://github.com/RodrigoRVSN/next_ts_boilerplate.git`
-- `yarn` to install dependencies
-- `yarn dev` to run the app
-- `yarn test` to run tests
-- `yarn lint` to run linters
-- `yarn cy:run` to run cypress in terminal
-- `yarn cy:open` to run cypress in browser
+To use, follow the steps:
 
+- git clone https://github.com/rodrigorvsn/meufreela.git
+- yarn
+- yarn dev
+
+
+## 📫 Contribuiting with meufreela
+
+To contribue with meufreela, follow the steps:
+
+1. Fork this repository.
+2. Create a branch: `git checkout -b <name_branch>`.
+3. Make the changes and confirm: `git commit -m '<message_commit>'`
+4. Send to original repository: `git push origin <main_branch> / <local>`
+5. Send the pull request.
+
+Alternatively, see the GitHub documentation at [how to create a pull request](https://help.github.com/en/github/collaborating-with-issues-and-pull-requests/creating-a-pull-request).
 ___
-## 🤖 Auto-formatting on save:
+## 🤝 Contributors
 
-Inside `/.vscode/settings.json` we set prettier as the default formatter, and also set `editor.codeActionsOnSave` to run:
+Made with ❤️ by:
 
-- **Lint:** `"source.fixAll.eslint"`
-- **Format:** `"source.fixAll.format"`
-
-___
-## ✅ Checking standards pre-commit:
-
-Using [husky](https://www.npmjs.com/package/husky) we can check all of our style standards to make sure our git commits are up to par. Check those checks out at [`.husky/pre-commit`](.husky/pre-commit)
+<table>
+  <tr>
+    <td align="center">
+      <a href="#">
+        <img src="https://github.com/rodrigorvsn.png" width="100px;" alt="Foto do Rodrigo Victor no GitHub"/><br>
+        <sub>
+          <b>Rodrigo Victor</b>
+        </sub>
+      </a>
+    </td>
+  </tr>
+</table>

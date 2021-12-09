@@ -1,0 +1,14 @@
+
+.fadeAppear{
+  animation: fadeIn 1.4s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0.4;
+  }
+
+  to{
+    opacity: 1;
+  }
+}

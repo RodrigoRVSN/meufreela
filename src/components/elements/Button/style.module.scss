@@ -1,0 +1,16 @@
+.button__container{
+  border: 0;
+  border-radius: 0.5rem;
+  width: 18.125rem;
+  height: 3.75rem;
+
+  font-size: 1.375rem;
+  color: var(--secondary-light);
+
+  cursor: pointer;
+  transition: filter 0.4s ease-in;
+
+  &:hover {
+    filter: brightness(0.5);
+  }
+}
