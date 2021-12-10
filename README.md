@@ -29,6 +29,7 @@ ___
 - Typescript
 - <b>Nextjs</b>
 - Next PWA
+- React Toastify
 
 <!--- #################### mudar ferramentas #################### --->
 ___

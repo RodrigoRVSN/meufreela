@@ -7,6 +7,7 @@
   width: 100vw;
   padding: 0 1.6875rem;
   height: 5rem;
+  z-index: 1000;
   background: linear-gradient(to bottom, var(--primary-light), var(--primary-dark));
 
   span{
@@ -22,11 +23,12 @@
     img{
       width: 2rem;
       height: 2rem;
-      transition: 0.5s ease-in;
       cursor: pointer;
+      transition: 0.5s ease-in;
 
       &:hover{
         filter: brightness(.5);
+        transform: scale(1.1);
       }
     }
   }
