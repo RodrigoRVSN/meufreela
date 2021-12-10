@@ -4,10 +4,10 @@
 echo '👷🧪 Styling, testing and building your project before committing'
 
 # Check Prettier standards
-yarn tsc ||
+yarn test ||
 (
-    echo '🤢🤮🤢🤮 Its FOKING RAW - Your styling looks disgusting. 🤢🤮🤢🤮
-            TSC Check Failed. Run yarn tsc, add changes and try commit again.';
+    echo '🤢🤮🤢🤮 Its FOKING RAW - Your testing is exploding. 🤢🤮🤢🤮
+            Tests Check Failed. Run yarn test, add changes and try commit again.';
     false;
 )
 
