@@ -35,7 +35,6 @@
     "@testing-library/dom": "^8.11.0",
     "@testing-library/jest-dom": "^5.15.0",
     "@testing-library/react": "^12.1.2",
-    "@types/": "testing-library/jest-dom",
     "@types/jest": "^27.0.2",
     "@types/node": "^16.11.12",
     "@types/react": "^17.0.33",

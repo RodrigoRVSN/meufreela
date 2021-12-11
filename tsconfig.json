@@ -36,8 +36,9 @@
       ],
       "@App/services/*": [
         "src/services/*"
-      ],
-    }
+      ]
+    },
+    "incremental": true
   },
   "include": [
     "next-env.d.ts",
