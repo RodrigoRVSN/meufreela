@@ -4,9 +4,8 @@
   justify-content: center;
   margin-top: 2.5rem;
 
-  div {
-    display: flex;
-    flex-direction: column;
+  label {
+    position: relative;
   }
 
   input{
@@ -21,6 +20,7 @@
     color: var(--primary-light);
     position: absolute;
     margin-top: 5rem;
+    left: 0;
   }
 
   @media(max-width: 1200px){
