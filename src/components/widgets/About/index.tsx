@@ -14,17 +14,14 @@ export default function About(): JSX.Element {
           </p>
         </article>
         <img
+          height={476}
+          width={400}
           loading="lazy"
           src="/thinking_man.webp"
           alt="Imagem de uma Pessoa pensando"
         />
       </section>
-      <img
-        loading="lazy"
-        className={styles.about__bar}
-        src="/bar.png"
-        alt="Imagem de Barra para separar conteúdo"
-      />
+      <div className={styles.about__bar} />
     </>
   );
 }

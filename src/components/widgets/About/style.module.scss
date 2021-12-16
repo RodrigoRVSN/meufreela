@@ -25,39 +25,39 @@
     }
 
   }
-  img{
-    height: 29.75rem;
-    width: 25rem;
-  }
 
   @media(max-width: 850px){
     flex-direction: column;
     text-align: justify;
     img{
-      height: 24.75rem;
+      height: 396px;
       width: auto;
     }
   }
   @media(max-width: 400px){
     img{
-      height: 18.75rem;
+      height: 300px;
       width: auto;
     }
   }
 }
 
 .about__bar{
+  clip-path: polygon(100% 0, 100% 100%, 82% 100%, 0 100%, 0% 38%);
   position: absolute;
   margin-top: -5rem;
 
+  width: 90rem;
+  height: 7.5rem;
+  background-color: #EAEAEA;
 
-  @media(min-width: 1000px){
+  @media(min-width: 90rem){
     width: 100%;
   }
-
   
-  @media(max-width: 900px){
+  @media(max-width: 90rem){
     display: block;
+    width: 100vw;
     margin-top: -4rem;
   }
 }

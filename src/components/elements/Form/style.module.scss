@@ -1,6 +1,6 @@
 .form__container{
   display: flex;
-  align-items: center;
+  align-items: flex-end;
   justify-content: center;
   margin-top: 2.5rem;
 
@@ -13,6 +13,7 @@
     border: 1px solid var(--border-input);
     border-radius: 0.5rem;
     width: 21.25rem;
+    height: 3.75rem;
     padding: 1rem;
   }
 
@@ -24,6 +25,7 @@
 
   @media(max-width: 1200px){
     flex-direction: column;
+    align-items: center;
     gap: 2rem;
     text-align: left;
     label{

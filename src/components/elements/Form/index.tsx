@@ -1,4 +1,5 @@
 import formatPhone from '@App/core/helpers/formatPhone';
+import SubmitServices from '@App/services/SubmitServices';
 import { FormEvent, useState } from 'react';
 import { toast } from 'react-toastify';
 import Button from '../Button';
@@ -10,21 +11,28 @@ export default function Form(): JSX.Element {
   const [errorName, setErrorName] = useState('');
   const [errorPhone, setErrorPhone] = useState('');
 
-  function handleSubmit(event: FormEvent): void {
+  async function handleSubmit(event: FormEvent): Promise<void> {
     event.preventDefault();
     setErrorName('');
     setErrorPhone('');
-    if (!name) {
+
+    if (!name || !name.includes(' ')) {
       setErrorName('Nome não completo!');
+      return;
     }
     if (!phone || phone.length !== 15) {
       setErrorPhone('Número não informado ou incompleto!');
+      return;
     }
 
-    if (name && phone && phone.length === 15) {
+    try {
+      await SubmitServices.sendInfo(name, phone);
+      toast.dark('✅ Messagem enviada! Aguarde.');
+    } catch (error) {
+      toast.error(error.message);
+    } finally {
       setPhone('');
       setName('');
-      toast.success('Solicitação realizada! Aguarde...');
     }
   }
 
@@ -37,33 +45,33 @@ export default function Form(): JSX.Element {
   }
 
   return (
-    <form onSubmit={handleSubmit} className={style.form__container}>
-      <div>
-        <label htmlFor="name">
-          Nome Completo
-          <input
-            type="text"
-            placeholder="Ex: Rodrigo Victor"
-            value={name}
-            onChange={e => handleChangeName(e.target.value)}
-          />
-        </label>
+    <form
+      method="post"
+      onSubmit={handleSubmit}
+      className={style.form__container}
+    >
+      <label htmlFor="name">
+        Nome Completo
+        <input
+          type="text"
+          placeholder="Ex: Rodrigo Victor"
+          value={name}
+          onChange={e => handleChangeName(e.target.value)}
+        />
         <span>{errorName}</span>
-      </div>
+      </label>
 
-      <div>
-        <label htmlFor="name">
-          Whatsapp
-          <input
-            type="text"
-            maxLength={15}
-            placeholder="(99) 99999-9999"
-            value={phone}
-            onChange={e => handleChangeNumber(e.target.value)}
-          />
-        </label>
+      <label htmlFor="name">
+        Whatsapp
+        <input
+          type="text"
+          maxLength={15}
+          placeholder="(99) 99999-9999"
+          value={phone}
+          onChange={e => handleChangeNumber(e.target.value)}
+        />
         <span>{errorPhone}</span>
-      </div>
+      </label>
 
       <Button
         disabled={!name || !phone}
